@@ -1,10 +1,10 @@
 ~~setup create react app boilerplate~~
-scaffold files and deps
+~~scaffold files and deps~~
 
-- install backend deps
-- create files for models/controllers (no code)
-- add client side routing and placeholder pages
-- install axios
+- ~~install backend deps~~
+- ~~create files for~~ models/controllers (no code)
+- ~~add client side~~ routing and placeholder pages
+- ~~install axios~~
 
 research Google Books API
 

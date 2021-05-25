@@ -4,12 +4,14 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import SavedPage from "./components/SavedPage";
 import SearchPage from "./components/SearchPage";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <SearchPage />
