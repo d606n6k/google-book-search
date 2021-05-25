@@ -1,10 +1,10 @@
-import { Link, LInk } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import Nav from "./Nav";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" href="/">
-        Navbar
+        React Google Books
       </Link>
       <button
         className="navbar-toggler"
@@ -19,23 +19,10 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <Link className="nav-link active" href="/">
-            React Google Books
-          </Link>
-          <a className="nav-link" href="#">
-            Features
-          </a>
-          <a className="nav-link" href="#">
-            Pricing
-          </a>
-          <a
-            className="nav-link disabled"
-            href="#"
-            tabIndex={-1}
-            aria-disabled="true"
-          >
-            Disabled
-          </a>
+          <Nav exact to="/">
+            Search
+          </Nav>
+          <Nav to="/saved">Saved</Nav>
         </div>
       </div>
     </nav>
